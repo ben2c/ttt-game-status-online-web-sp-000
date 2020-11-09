@@ -51,11 +51,9 @@ def full? (board)
 end
 
 def draw? (board)
-  if full?(board) && !won?(board)
+  if full?(board) && won?(board).class == Array
     return true
-  elsif !full?(board) && !won?(board)
-    return false
-  elsif won?(board)
+  else
     return false
   end
 end
