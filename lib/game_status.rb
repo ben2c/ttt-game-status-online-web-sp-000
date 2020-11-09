@@ -27,6 +27,8 @@ def won?(board)
 
     if position1 == "X" && position2 == "X" && position3 == "X"
       return n
+    elsif position1 == "O" && position2 == "O" && position3 == "O"
+      return n
     else
       false
     end
