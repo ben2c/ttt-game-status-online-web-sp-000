@@ -16,7 +16,6 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board.all? { |w| w!= " "}
     if board.any? { |e| e != " " }
       WIN_COMBINATIONS.each do |n|
         index1 = n[0]
@@ -36,9 +35,6 @@ def won?(board)
     else
       false
     end
-  else
-    false
-  end
 end
 
 def full? (board)
