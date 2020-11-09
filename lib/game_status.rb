@@ -60,7 +60,7 @@ def winner (board)
   win = []
   win = won?(board)
   if win == false
-    return false
+    return nil
   else
     if board[win[0] == "X"]
       return "X"
