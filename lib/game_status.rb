@@ -32,7 +32,8 @@ def won?(board)
       elsif position1 == "O" && position2 == "O" && position3 == "O"
         return n
       else
-        false
+        if board.all? { |i| != " "}
+          false
       end
     end
   else
