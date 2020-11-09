@@ -57,9 +57,13 @@ def over? (board)
 end
 
 def winner (board)
-  if winner == "X" && won?(board)
-    return "X"
-  elsif winner == "O" && won?(board)
-    return "O"
-  end
+  win = won?(board)
+  if win == false
+    return false
+  else
+    if board[index[0] == "X"]
+      return "X"
+    else 
+      return "O"
+    end
 end
