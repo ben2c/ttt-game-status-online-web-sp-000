@@ -32,6 +32,8 @@ def won?(board)
       elsif position1 == "O" && position2 == "O" && position3 == "O"
         return n
       end
+      if full?(board)
+        false
     end
   else
     false
