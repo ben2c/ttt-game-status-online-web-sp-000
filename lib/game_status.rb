@@ -43,11 +43,7 @@ def won?(board)
 end
 
 def full? (board)
-  if board.all? { |k| k != " "}
-    return true
-  else
-    return false
-  end
+  board.all? { |i| i == "X" || i == "O"  }
 end
 
 def draw? (board)
