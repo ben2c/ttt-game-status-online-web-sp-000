@@ -42,5 +42,6 @@ end
 
 def full? (board)
   if board.all? { |k| k != " "}
+    false
   end
 end
