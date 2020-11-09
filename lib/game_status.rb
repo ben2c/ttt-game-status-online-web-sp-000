@@ -39,3 +39,8 @@ def won?(board)
     false
   end
 end
+
+def full? (board)
+  if board.all? { |k| k != " "}
+  end
+end
