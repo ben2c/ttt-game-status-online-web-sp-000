@@ -53,7 +53,7 @@ end
 def draw? (board)
   if full?(board) && won?(board).class != Array
     return true
-  else
+  elsif !full?(board) && won?(board) == false
     return false
   end
 end
